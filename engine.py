@@ -109,8 +109,7 @@ def scan_once():
                         user = watchlist_item.user
                         
                         # تحقق إضافي: هل هذا المستخدم مسموح له برؤية هذه الشبكة؟
-                        # (مفيد إذا كان المستخدم Free ويراقب محفظة على شبكة Pro أضافها مستخدم آخر)
-                        # لكن للتبسيط، نعتمد على أن الإضافة منعت من البداية.
+                      
                         
                         if check_thresholds(watchlist_item.alert_settings, "ETH", change, current_eth, delta):
                             # رسالة للمستخدم (Human Readable)

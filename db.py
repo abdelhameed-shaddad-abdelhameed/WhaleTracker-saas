@@ -8,7 +8,7 @@ from sqlalchemy import (
     Column, String, Integer, Numeric, DateTime, 
     create_engine, select, delete, update, ForeignKey, Boolean, JSON
 )
-# ✅ تم إضافة joinedload هنا للإصلاح
+
 from sqlalchemy.orm import declarative_base, Session, relationship, joinedload
 import config
 
