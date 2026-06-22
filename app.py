@@ -211,7 +211,7 @@ def main():
     with st.sidebar:
         st.title("🐋 WhaleHunter")
         if not user:
-            st.info("💡 For Demo Access, use Username: admin | Password: password123")
+            st.info("💡 For Demo Access, use Username: admin | Password: 0852")
             u = st.text_input("Username")
             p = st.text_input("Password", type="password")
             if st.button("Login"): login(u, p)
