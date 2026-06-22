@@ -26,6 +26,7 @@ def get_session_user():
 
 def login(username, password):
     # التعديل: الدخول بالاسم والباسورد
+    st.info("💡 For Demo Access, use Username: admin | Password: password123")
     user = db.login_user(username, password)
     if user:
         st.session_state["user"] = user
