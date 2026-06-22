@@ -26,7 +26,6 @@ def get_session_user():
 
 def login(username, password):
     # التعديل: الدخول بالاسم والباسورد
-    st.info("💡 For Demo Access, use Username: admin | Password: password123")
     user = db.login_user(username, password)
     if user:
         st.session_state["user"] = user
@@ -212,6 +211,7 @@ def main():
     with st.sidebar:
         st.title("🐋 WhaleHunter")
         if not user:
+            st.info("💡 For Demo Access, use Username: admin | Password: password123")
             u = st.text_input("Username")
             p = st.text_input("Password", type="password")
             if st.button("Login"): login(u, p)
